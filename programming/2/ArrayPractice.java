@@ -1,7 +1,7 @@
 /**
  * ArrayPractice by Team BossCoders
  * Christine Marra
- * collaborators: Adam Prado, Susie S. , javacAmanda Lee
+ * collaborators: Adam Prado, Susie S., Amanda Lee
  */
 
 /**
@@ -185,13 +185,18 @@ public class ArrayPractice
      Returns:
      value of the largest element in the array
   */
-  // public static int findMaxValue( int[] data ) {
-  //   int m;  // will hold the maximum value;
+  public static int findMaxValue( int[] data ) 
+  {
+    int m = data[0];  // will hold the maximum value;
+    for (int = 1; i<data.length; i++){
+      if data[i]>max{
+        max = data[i]
+      }
+    }
 
-  //   /* YOUR BRILLIANT CODE HERE */
-
-  //   return m;
-  // }
+     return max;
+    
+   }
 
 
   /**
@@ -202,16 +207,19 @@ public class ArrayPractice
      Ex: if data holds 5,6,7,8,9,10 then the return value
      will be 3 since three of the elements are odd.
   */
-  // public static int countOdds( int[] data ) {
-  //   int count;
+  public static int countOdds( int[] data ) 
+  {
+    int count = 0;
 
   //   /* YOUR BRILLIANT CODE HERE */
+      for (i=0; i<data.length; i++){
+        if(data[i]%2==1){
+          count++
+        }
+      }
 
-  //   // Note the % operator is the modulo (basically remainder) function
-  //   // in java. Use to determine if an integer is odd.
-
-  //   return count;
-  // }
+  return count;
+ }
 
   /**
      Parameters:
@@ -228,6 +236,13 @@ public class ArrayPractice
   public static void flip( int[] data )
   {
     /* YOUR BRILLIANT CODE HERE */
+    int[] newArray = new int[data.length];
+    for (i=0;i<data.length; i++){
+      newArray[i]=data[data.length-1-i];
+    }
+    for (int i= 0; i<newArray.length; i++){
+      data[i]=newArray[i];
+    }
   }
 
 
@@ -249,6 +264,11 @@ public class ArrayPractice
     System.out.println(arraySum(data2));
     System.out.println("Is data2 sorted? " + isSorted(data2));
     System.out.println("Is data sorted? " + isSorted(data));
+    System.out.println("The maximum value of the array is " + findMaxValue (data2));
+    System.out.println("There are" + countOdds(data2) + " odd numbers in data set 2");
+    flip(data2);
+    System.out.println("This flips data2 ");
+    printArray(data2);
     // add calls to show that the methods you write work.
   }
 }

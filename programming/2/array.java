@@ -1,7 +1,5 @@
-import java.io*;
-public class array
-  {public static class void main}
 /**
+*TEMPLATE ASSIGNMENT
  * ArrayPractice by Team BossCoders
  * First Last
  * collaborators: First Last, First Last
