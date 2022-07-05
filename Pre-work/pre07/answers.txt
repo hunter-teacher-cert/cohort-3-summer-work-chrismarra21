@@ -1,0 +1,12 @@
+Method Banana - will return the product of all in the given array.
+Variable Kiwi - use to hold the value that will be return. 
+Variable i - use to iterate through the array and get index of current value in the array.
+
+Method Grapefruit - used to find if a given value is in a given array. Will return the index of the value you’re looking for or -1 if value is not found.
+Variable grape - the given value you’re looking for in the array.
+
+Method Pineapple - used to find how many times a given value appears in a given array.  Will return the number of times the given value appears.
+Variable pear - use to hold the value that will be returned, increased by 1 every time the value is found.
+Variable pine - use to iterate through the array and help to compare the values of a[] and apple.
+Variable apple - the given value you’re looking for in the array.
+

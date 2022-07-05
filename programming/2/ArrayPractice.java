@@ -132,6 +132,7 @@ public class ArrayPractice
     for(int i=0;i<data.length;i++){
       if(value==data[i]){
         index = i;
+        break;
       }
     }
     return index; // change this (it is just a placeholder to "get past" the compiler)
@@ -187,10 +188,10 @@ public class ArrayPractice
   */
   public static int findMaxValue( int[] data ) 
   {
-    int m = data[0];  // will hold the maximum value;
-    for (int = 1; i<data.length; i++){
-      if data[i]>max{
-        max = data[i]
+    int max = data[0];  // will hold the maximum value;
+    for (int i=0; i<data.length; i++){
+      if (data[i]>max){
+        max = data[i];
       }
     }
 
@@ -212,9 +213,9 @@ public class ArrayPractice
     int count = 0;
 
   //   /* YOUR BRILLIANT CODE HERE */
-      for (i=0; i<data.length; i++){
+      for (int i=0; i<data.length; i++){
         if(data[i]%2==1){
-          count++
+          count++;
         }
       }
 
@@ -237,7 +238,7 @@ public class ArrayPractice
   {
     /* YOUR BRILLIANT CODE HERE */
     int[] newArray = new int[data.length];
-    for (i=0;i<data.length; i++){
+    for (int i=0;i<data.length; i++){
       newArray[i]=data[data.length-1-i];
     }
     for (int i= 0; i<newArray.length; i++){
@@ -253,18 +254,25 @@ public class ArrayPractice
     // and add more lines as you add additional routines.
 
     int[] data = buildRandomArray(10, 20);
-    int[] data2 = buildIncreasingArray(10,5,3);
+    int[] data2 = buildIncreasingArray(10,5,3); // data2[] = {5, 8, 11, 14, 17, 20, 23, 26, 29, 32}
+    int[] arr = new int[]{1, 2, 3, 2, 5};
     System.out.println("This is list for buildRAndomArray(10,20");
      printArray(data);
+    
      System.out.println("\nThis is the list for buildIncreaseArray(10,5,3)");
      printArray(data2);
-    System.out.println("The firstOccurence in data2 of 20");
-    System.out.println(firstOccurence(data2,19));
+    
+    System.out.println("The firstOccurence in arr of 2");
+    System.out.println(firstOccurence(arr, 2));
+    
     System.out.println("\nThe sum of data 2");
     System.out.println(arraySum(data2));
+    
     System.out.println("Is data2 sorted? " + isSorted(data2));
     System.out.println("Is data sorted? " + isSorted(data));
+    
     System.out.println("The maximum value of the array is " + findMaxValue (data2));
+   
     System.out.println("There are" + countOdds(data2) + " odd numbers in data set 2");
     flip(data2);
     System.out.println("This flips data2 ");
