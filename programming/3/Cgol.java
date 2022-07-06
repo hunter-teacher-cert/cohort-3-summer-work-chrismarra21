@@ -5,6 +5,7 @@ import java.util.*;
  * Conway's Game of Life Team 7
  * Christine Marra
  * collaborators: Joshua Higgins, Dave Ciolino-Volano, Greg Sciame
+MUCH APPRECIATION TO JOSH AND GREG
  */
 
 /**
@@ -21,7 +22,7 @@ import java.util.*;
 
 public class Cgol
 {
-  public static final Scanner in = new Scanner(System.in);//see line 155 waits for user to press enter.
+  public static final Scanner in = new Scanner(System.in);//see line 155 waits for user to press enter between iterations.
   //create, initialize, and return  empty board (all cells dead)
   public static char[][] createNewBoard( int rows, int cols )
   {
@@ -39,9 +40,7 @@ public class Cgol
   //print the board to the terminal
   public static void printBoard( char[][] board )
   {
-    
-    System.out.println("Conway's Game of Life"); 
-        
+    System.out.println("Conway's Game of Life");     
     for (int j = 0; j < board[0].length+2; j++){ 
         System.out.print('-');
     }
@@ -53,15 +52,11 @@ public class Cgol
       for (int j = 0; j < board[i].length; j++){ 
         System.out.print(board[i][j]);
     }
-      
-      for (int j = 0; j < board[i].length; j++){ 
-        System.out.print(board[i][j]);
-    }
       System.out.println('|');
     
     }
-    for(int j=0; j<board[0].length; j++){
-      System.out.print('-');
+      for (int j = 0; j < board[0].length+2; j++){ 
+        System.out.print('-');
     }
     System.out.println();
   }
