@@ -3,8 +3,7 @@ import java.util.*;
 
 /**
  * Array2DPractice by Team Independence
- * First Last
- * collaborators: Seth Adams, Christine Marra, Wayne Tobias, Erwin Lara
+ * collaborators: Seth Adams, Christine Marra, Wayne Tobias, Erwin Lara - Thank you contributors!!!
  */
 
 /**
