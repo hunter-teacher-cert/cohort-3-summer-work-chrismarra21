@@ -154,6 +154,16 @@ iterate (traverse) through first column and will change each box to X, then shif
   public static void explodeSquare( char[][] board, int row, int col )
   {
     // checking for values off screen (positions outside of the array)
+     for(int i = row-1; i <= row + 1;i++){
+       for(int j = col-1; j <= col + 1; j++){
+         if ((i==0) && (j==0) && (i<board.length) && (j<board[0].length){
+            board[i][j]='X';
+          }  // if it is the original square do not change
+          
+            else{          {
+            board [i][j]= 'O';  // Exploded square
+          } 
+        }
       /**if (col-1 < 0){
           System.out.println("wont work A");
               }
@@ -178,15 +188,15 @@ iterate (traverse) through first column and will change each box to X, then shif
       if (row+1>board.length ){
           System.out.println("wont work D");
               }**/
-      for(int i = row-1; i <= row + 1;i++)//loops through each row one element before, element location and one element after.
+      //loops through each row one element before, element location and one element after.
       {
-          for(int j = col-1; j <= col + 1; j++)// loops through each column
+          // loops through each column
         {
-          if ((i==row) && (j==col))  // if it is the original square do not change
+          //if ((i==row) && (j==col))  // if it is the original square do not change
           {
-            board [i][j]= 'Q'; // original entrycd p
+          //  board [i][j]= 'Q'; // original entrycd p
           }
-          else
+          //else
           {
             board [i][j]= 'X';  // Exploded square
           } 
@@ -234,6 +244,7 @@ iterate (traverse) through first column and will change each box to X, then shif
   public static void explodeAllChar(char[][] board, char c)
   {
     /* YOUR AWESOME CODE HERE */
+    
   }
 
 
