@@ -156,7 +156,7 @@ iterate (traverse) through first column and will change each box to X, then shif
     // checking for values off screen (positions outside of the array)
      for(int i = row-1; i <= row + 1;i++){
        for(int j = col-1; j <= col + 1; j++){
-         if ((i==0) && (j==0) && (i<board.length) && (j<board[0].length){
+         if ((i==0) && (j==0) && (i<board.length) && (j<board[0].length)){
             board[i][j]='X';
           }  // if it is the original square do not change
           
@@ -241,7 +241,7 @@ iterate (traverse) through first column and will change each box to X, then shif
      qqqXz
      explodeAllchar(board,'z') will change board to:
   */
-  public static void explodeAllChar(char[][] board, char c)
+ public static void explodeAllChar(char[][] board, char c)
   {
     /* YOUR AWESOME CODE HERE */
     
