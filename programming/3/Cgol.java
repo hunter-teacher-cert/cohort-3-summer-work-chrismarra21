@@ -2,9 +2,10 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Conway's Game of Life Team 7
+ * Conway's Game of Life Day 4 Team 7
  * Christine Marra
  * collaborators: Joshua Higgins, Dave Ciolino-Volano, Greg Sciame
+  Thank you to Josh and Greg!
  */
 
 /**

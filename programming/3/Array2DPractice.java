@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  * Array2DPractice by Team Independence
- * collaborators: Seth Adams, Christine Marra, Wayne Tobias, Erwin Lara - Thank you contributors!!!
+ * collaborators: Seth Adams, Christine Marra, Wayne Tobias, Erwin Lara - Thank you Seth and teammates!!!
  */
 
 /**

@@ -2,6 +2,7 @@
  * Recursion Practice with Strings by Team 7
  * Christine Marra
  * collaborators: Josh Higgins, Dave Ciolino-Volano, Greg Sciame
+  MUCHAS GRACIAS to Josh
  */
 
 public class Fence

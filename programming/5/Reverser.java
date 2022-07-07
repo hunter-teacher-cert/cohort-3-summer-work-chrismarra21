@@ -1,4 +1,5 @@
 /**
+  NOT COMPLETED
  * Recursive String Reverser by Team Palindromotosis
  * First Last
  * collaborators: First Last, First Last

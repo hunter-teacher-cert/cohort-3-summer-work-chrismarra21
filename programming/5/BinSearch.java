@@ -1,4 +1,5 @@
 /**
+  NOT COMPLETED
  * Binary Search by Team Did You Mean Recursion?
  * First Last
  * collaborators: First Last, First Last

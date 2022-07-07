@@ -1,5 +1,5 @@
 /**
-*TEMPLATE ASSIGNMENT
+*TEMPLATE ASSIGNMENT - NOT USED
  * ArrayPractice by Team BossCoders
  * First Last
  * collaborators: First Last, First Last
