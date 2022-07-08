@@ -1,7 +1,7 @@
 /**
- * SuperArray by Team MarvelvsDC
- * First Last
- * collaborators: First Last, First Last
+ * SuperArray from Day 6 Room 15
+ * Christine Marra
+ * GOAT Collaborators: Amanda Lee and Marisa Shulman
  */
 
 /**
@@ -25,9 +25,9 @@ public class SuperArray
      declare instance vars
      ...and initialize?
   */
+    
 
-
-  //instance vars
+  //instance variables
   private int[] data;           // "interior"/"underlying" data container
   private int numberElements;   // number of "meaningful" elements
 
@@ -36,10 +36,12 @@ public class SuperArray
   //overloaded constructor -- allows specification of initial capacity
   public SuperArray( int size )
   {
-    //init underlying/inner storage of specified capacity
+    //initialize underlying/inner storage of specified capacity
     /* YOUR SIMPLE+SMART CODE HERE */
-
-    //init instance vars
+    //initialize instance variables
+    numberElements = 0;
+    data = new int [size];
+    
     /* YOUR SIMPLE+SMART CODE HERE */
 
   }
@@ -49,7 +51,8 @@ public class SuperArray
   {
     //init underlying/inner storage of capacity 10
         /* YOUR SIMPLE+SMART CODE HERE */
-
+    numberElements = 0;
+    data = new int [10];
     //init instance vars
         /* YOUR SIMPLE+SMART CODE HERE */
   }
@@ -70,33 +73,36 @@ public class SuperArray
 
     // add item
     /* YOUR SIMPLE+SMART CODE HERE */
-
+    data [numberElements] = value;
 
     // increment numberElements
     /* YOUR SIMPLE+SMART CODE HERE */
+    numberElements ++ ;
 
   }//end add()
 
 
-  public boolean isEmpty()
-  {
-    //return whether this SuperArray instance is empty
-    /* YOUR SIMPLE+SMART CODE HERE */
-  }
+  // public boolean isEmpty()
+  // {
+  //   //return whether this SuperArray instance is empty
+  //   /* YOUR SIMPLE+SMART CODE HERE */
+  //   //for (int )
+  // }
 
 
-  public int get(int index)
-  {
-    //return item at index
-    /* YOUR SIMPLE+SMART CODE HERE */
-  }
+  // public int get(int index)
+  // {
+  //   //return item at index
+  //   /* YOUR SIMPLE+SMART CODE HERE */
+  // }
 
 
-  public String toString()
-  {
-    //return stringified version of this Object
-    /* YOUR SIMPLE+SMART CODE HERE */
-  }//end toString()
+  // public String toString()
+  // {
+  //   //return stringified version of this Object
+  //   /* YOUR SIMPLE+SMART CODE HERE */
+  //   return 
+  // }//end toString()
 
 
   //return Stringified version of this Object,
