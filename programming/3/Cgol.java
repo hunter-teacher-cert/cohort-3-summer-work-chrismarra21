@@ -5,7 +5,7 @@ import java.util.*;
  * Conway's Game of Life Day 4 Team 7
  * Christine Marra
  * collaborators: Joshua Higgins, Dave Ciolino-Volano, Greg Sciame
-  Thank you to Josh and Greg!
+  HUGE Thank you to Josh and Greg!
  */
 
 /**
@@ -55,13 +55,10 @@ public class Cgol
         System.out.print(board[i][j]);
     }
       
-      for (int j = 0; j < board[i].length; j++){ 
-        System.out.print(board[i][j]);
-    }
       System.out.println('|');
     
     }
-    for(int j=0; j<board[0].length; j++){
+    for(int j=0; j<board[0].length+2; j++){
       System.out.print('-');
     }
     System.out.println();
@@ -144,7 +141,9 @@ public class Cgol
   {
     char[][] test, lastGen;
     test = createNewBoard(10,10);
-    imbueLife (test, 200);
+    setCell(test,0,0,'X');
+    setCell(test,0,1,'X');
+    setCell(test,1,0,'X');
     for(int i = 0; i < 10; i++){
       System.out.println("Generation " + i);
       printBoard(test);

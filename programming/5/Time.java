@@ -6,7 +6,7 @@ import java.util.*;
  * Time class by Day 5 Team 7
  * Christine Marra
  * collaborators: Joshua Higgins, Dave Ciolino-Volano, Greg Sciame
-    HUGE THANKS to Josh
+    HUGE THANKS to Josh and Greg
   */
 
 /**

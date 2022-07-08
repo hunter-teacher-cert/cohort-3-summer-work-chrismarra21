@@ -41,7 +41,7 @@ public class Driver {
     t1 = new Time();
     t2 = new Time(20, 20, 20);
     testDriver(t1);
-    //testerT(t2);
+    //testDriver(t2);
     
   }//ends main()
 
