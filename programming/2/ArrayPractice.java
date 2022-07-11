@@ -3,6 +3,7 @@
  * Christine Marra
  * collaborators: Adam Prado, Susie S., Amanda Lee
   Thank you to the BEST TEAM !!!
+  Completed with assistance from TA - Vasyl
  */
 
 /**

@@ -3,7 +3,8 @@ import java.util.*;
 
 /**
  * Array2DPractice by Team Independence
- * collaborators: Seth Adams, Christine Marra, Wayne Tobias, Erwin Lara - Thank you Seth and teammates!!!
+ * collaborators: Seth Adams, Christine Marra, Wayne Tobias, Erwin Lara - Thank you Seth and team
+****BEGINNER CODE ONLY ****
  */
 
 /**
@@ -62,10 +63,10 @@ public class Array2DPractice
      // int cols = 5;
     /* YOUR AWESOME CODE HERE */
     // i represents row, j represents column
- System.out.println("The elements of the board is ");    
+ System.out.println("The elements of the board are ");    
     for (int i = 0; i < board.length; i++) 
     {
-      for (int j = 0; j < board[i].length; j++) //i instead of row??
+      for (int j = 0; j < board[i].length; j++) 
       {
           System.out.print(board[i][j] + " ");
         
@@ -110,7 +111,7 @@ public class Array2DPractice
     char[][] copy = new char[original.length][original[0].length];
     for (int i=0; i<original.length; i++)
     {
-      for(int j=0; j<original[0].length; j++)
+      for(int j=0; j<original[i].length; j++)
       {
         copy[i][j] = original[i][j];
       }
@@ -151,19 +152,19 @@ iterate (traverse) through first column and will change each box to X, then shif
      Note: Make sure to correctly handle the cases when you try
      to explode an element on the edges.
   */
-  public static void explodeSquare( char[][] board, int row, int col )
+  //public static void explodeSquare( char[][] board, int row, int col )
   {
     // checking for values off screen (positions outside of the array)
-     for(int i = row-1; i <= row + 1;i++){
-       for(int j = col-1; j <= col + 1; j++){
-         if ((i==0) && (j==0) && (i<board.length) && (j<board[0].length)){
-            board[i][j]='X';
-          }  // if it is the original square do not change
+     //for(int i = row-1; i <= row + 1;i++){
+      // for(int j = col-1; j <= col + 1; j++){
+      //   if ((i==0) && (j==0) && (i<board.length) && (j<board[0].length)){
+       //     board[i][j]='X';
+        //  }  // if it is the original square do not change
           
-            else{          {
-            board [i][j]= 'O';  // Exploded square
-          } 
-        }
+         //   else{          {
+        //    board [i][j]= 'O';  // Exploded square
+       //   } 
+     //   }
       /**if (col-1 < 0){
           System.out.println("wont work A");
               }
@@ -198,7 +199,7 @@ iterate (traverse) through first column and will change each box to X, then shif
           }
           //else
           {
-            board [i][j]= 'X';  // Exploded square
+          //  board [i][j]= 'X';  // Exploded square
           } 
         }
       }
@@ -241,7 +242,7 @@ iterate (traverse) through first column and will change each box to X, then shif
      qqqXz
      explodeAllchar(board,'z') will change board to:
   */
- public static void explodeAllChar(char[][] board, char c)
+ //public static void explodeAllChar(char[][] board, char c)
   {
     /* YOUR AWESOME CODE HERE */
     
@@ -283,7 +284,7 @@ iterate (traverse) through first column and will change each box to X, then shif
      xxxRxx
      Note that the method has to stop at the bottom of the array.
   */
-  public static void downString( char[][] board, int row, int col, String word )
+//  public static void downString( char[][] board, int row, int col, String word )
   {
     /* YOUR AWESOME CODE HERE */
   }
@@ -291,7 +292,7 @@ iterate (traverse) through first column and will change each box to X, then shif
 
   public static void main( String[] args )
   {
-    char[][] b = buildBoard(4,4,'Q');
+    char[][] b = buildBoard(5,5,'$');
     printBoard (b);
     /*
       Note, you can directly set elements in the board
@@ -303,8 +304,8 @@ iterate (traverse) through first column and will change each box to X, then shif
     // value that is out of bounds will stop code
     char[][] c=copyBoard(b);
     printBoard(c);
-    explodeSquare(b,1,10);
-    printBoard (b);
+    //explodeSquare(b,1,10);
+    //printBoard (b);
     
   }
 }
