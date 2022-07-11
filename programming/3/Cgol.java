@@ -54,7 +54,7 @@ public class Cgol
       for (int j = 0; j < board[i].length; j++){ 
         System.out.print(board[i][j]);
     }
-      
+      //Josh built the borders
       System.out.println('|');
     
     }
@@ -121,10 +121,10 @@ public class Cgol
    
   return nextBoard;
   }
-  // Uses a random number generator to populate Array
+  // Josh's code: He used a random number generator to populate Array
   public static void imbueLife(char[][] board, int numCells){
-    int rInt, cInt;
-    Random r = new Random();
+   int rInt, cInt;
+   Random r = new Random();
 
     while(numCells > 0){
       rInt = r.nextInt(board.length);
@@ -143,7 +143,14 @@ public class Cgol
     test = createNewBoard(10,10);
     setCell(test,0,0,'X');
     setCell(test,0,1,'X');
-    setCell(test,1,0,'X');
+    setCell(test,0,3,'X');
+    setCell(test,1,1,'X');
+    setCell(test,1,3,'X');
+    setCell(test,2,3,'X');    
+    setCell(test,3,3,'X');
+    setCell(test,4,4,'X');    
+    setCell(test,3,4,'X');
+    
     for(int i = 0; i < 10; i++){
       System.out.println("Generation " + i);
       printBoard(test);
