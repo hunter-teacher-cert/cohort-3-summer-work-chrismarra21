@@ -76,8 +76,21 @@ public class AlPractice{
     the value  that was in dataList[index2] is now in dataList[index1].
   - No other values should be modified.
   */
-  public static void swapElements(ArrayList<Integer> dataList, int index1,int index2){
 
+  //example = [9,8,7,6,5,4,3,2,1]
+  //swapElements(example,2,6)
+  // [9,8,3,6,5,4,7,2,1]
+  
+  public static void swapElements(ArrayList<Integer> dataList, int index1,int index2){
+    //create placeholder
+    int temp;
+    //retrieves value at index1 and saves a temp
+    temp = dataList.get(index1);
+    //goes to index1 and replaces with index2
+    dataList.set(index1, dataList.get(index2));
+    //goes to index2 and replaces with the value stored in temp
+    dataList.set(index2,temp);
+    //thanks Rachel!
   }
 
   /**
@@ -87,9 +100,9 @@ public class AlPractice{
   Postconditions:
   - The dataList is modified such that all occurances of valueToRemove are removed.
   */
-  public static void removeValue(ArrayList<Integer> dataList2, int valueToRemove){
-    ArrayList<Integer> dataList2 = new ArrayList<Integer>();
-    dataList2.remove();
+  //public static void removeValue(ArrayList<Integer> dataList2, int valueToRemove){
+   // ArrayList<Integer> dataList2 = new ArrayList<Integer>();
+  //  dataList2.remove();
     
   }
 
@@ -105,9 +118,9 @@ public class AlPractice{
   Postconditions:
   - The parameter ArrayLists should not be modified.
   */
-  public static ArrayList<Integer> sumLists(ArrayList<Integer>ListA,ArrayList<Integer>ListB){
-    return null;//placeholder to compile.
-  }
+ // public static ArrayList<Integer> sumLists(ArrayList<Integer>ListA,ArrayList<Integer>ListB){
+//    return null;//placeholder to compile.
+ // }
 
   /** zipLists
   Parameters:
@@ -130,17 +143,16 @@ public class AlPractice{
 
     ArrayList<Integer> al;
    
-
     //Uncomment these to test buildRandomList
     al = buildRandomList(10,100);
     System.out.println(al);
-
     
     System.out.println("The sum of the buildRandomList is: " + sumOfList(al));
-    System.out.println("Remove last element, 9 remaining./n " + removeValue(al,9));
+  
+    // System.out.println("Remove last element, 9 remaining./n " + removeValue(al,9));
     //Uncomment these to test swapElements
-    // swapElements(al,2,6); // NOTE: had to include al
-    // System.out.println(al);
+    swapElements(al,2,6); // NOTE: had to include al
+    System.out.println(al);
 
     // Uncomment these to test removeValue
     
@@ -154,6 +166,6 @@ public class AlPractice{
     //removeValue(al,5);
     //System.out.println(al); // needed al, not a
 
-  }
+  
 
 }
