@@ -42,7 +42,7 @@ public class Cgol
   {
     
     System.out.println("Conway's Game of Life"); 
-        
+    //Josh coded this great looking border :-)    
     for (int j = 0; j < board[0].length+2; j++){ 
         System.out.print('-');
     }
@@ -54,7 +54,7 @@ public class Cgol
       for (int j = 0; j < board[i].length; j++){ 
         System.out.print(board[i][j]);
     }
-      //Josh built the borders
+      
       System.out.println('|');
     
     }
@@ -121,7 +121,7 @@ public class Cgol
    
   return nextBoard;
   }
-  // Josh's code: He used a random number generator to populate Array
+  // Josh's code: He used a random number generator to populate Array 
   public static void imbueLife(char[][] board, int numCells){
    int rInt, cInt;
    Random r = new Random();
