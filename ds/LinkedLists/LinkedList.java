@@ -2,6 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /**
+Christine Marra
+Team 10 Collaborators: Sue S. Marisa S. and Ed H. - they are awesome collaborators and helped me immensely.
 For all attempted methods, make sensible decisions for error and
 edge cases (such as indexing out of bounds).
 Basic
@@ -97,6 +99,7 @@ public class LinkedList{
   add(1,"z") results in:
   "a"-> "z" -> "b" -> "c" -> "d"
   */
+  // Credit goes to Team 10 Suzy S.
   public void add(int index, String value){
   Node insertNode = new Node(value);
   Node walker = head;
