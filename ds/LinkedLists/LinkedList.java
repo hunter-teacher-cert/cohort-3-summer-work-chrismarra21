@@ -45,12 +45,14 @@ public class LinkedList{
   */
   public String get(int index){
     Node walker = head;
-    for (int i = 0; i<= index; i++){
+    String result = "";
+    for (int i = 0; i< index; i++){
       walker = walker.getNext();
      
    }
+    result+= walker;
      
-    return walker.toString();
+    return result;
   }
    
 
@@ -62,17 +64,24 @@ public class LinkedList{
     Node walker = head;
     while(walker != null){
     
-      result = result + walker;
-      walker = walker.get.Next();
+      result = result + walker.toString();
+      walker = walker.getNext();
     } 
-    return "";
+    return result;
   }
 
   /**
   returns the number of elements in the list
   */
   public int size(){
-    return 0;
+    Node walker = head;
+    int counter = 0;
+    while (walker != null)
+    {
+      walker = walker.getNext();
+      counter ++;
+    }    
+    return counter;
   }
 
 
@@ -89,7 +98,13 @@ public class LinkedList{
   "a"-> "z" -> "b" -> "c" -> "d"
   */
   public void add(int index, String value){
-
+  Node insertNode = new Node(value);
+  Node walker = head;
+  for (int i = 0; i < index-1; i++){
+    walker = walker.getNext();  
+  }
+    insertNode.setNext(walker.getNext());
+    walker.setNext(insertNode);
   }
 
 
