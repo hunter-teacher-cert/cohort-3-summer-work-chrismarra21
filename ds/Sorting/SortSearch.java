@@ -55,7 +55,7 @@ public class SortSearch{
 
 
     /*
-      return the index of the smallest data idem from index start to the end
+      return the index of the smallest data item from index start to the end
       of the ArrayList. If there are multiple of the smallest value,
       return any of them.
       
