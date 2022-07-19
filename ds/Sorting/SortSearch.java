@@ -64,13 +64,15 @@ public class SortSearch{
       if start was 2 (start at index 2, value 10) then it would return 3
       which is the index of the value 6 which is the index with the
       smallest value from start to end
-      On the otherh and, if start was 0, then the method would
+      On the other hand, if start was 0, then the method would
       return 1 since the value 3 is in index 1 and that is the smallest.
       
     */
     public int findSmallestIndex(int start){
-	int smallIndex = 0;
-	
+	int smallIndex = start;
+	for (int i = start; i< data.length; i++){
+    
+  }
 	return smallIndex;
     }
 
