@@ -106,6 +106,7 @@ public class LinkedList{
   for (int i = 0; i < index-1; i++){
     walker = walker.getNext();  
   }
+    
     insertNode.setNext(walker.getNext());
     walker.setNext(insertNode);
   }
@@ -120,8 +121,18 @@ public class LinkedList{
   indexOf("d") would return 3 since "d" is at location 3.
   */
   public int indexOf(String value){
-    return 0;
-  }
+    Node walker = head;
+    int counter = 0;
+    while (walker != null){
+      if (walker.getData() == value){
+         return counter;
+      }
+      walker = walker.getNext();
+      counter ++;
+      }
+    return -1;
+    }
+
 
 
   /**
@@ -131,7 +142,21 @@ public class LinkedList{
   the array.
   */
   public String[] toArray(){
-    return null;
+    Node walker = head;
+    int size = 0;
+    while (walker != null)
+    {
+      walker = walker.getNext();
+      size ++;
+    }    
+  
+    String[] result; 
+    result = new String[size];
+    for (int i = 0; i<result.length -1; i++ ){
+      result[i] = walker.getData();
+      walker = walker.getNext();
+    }
+    return result;
   }
 
 
