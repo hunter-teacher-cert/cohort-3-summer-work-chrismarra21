@@ -68,10 +68,13 @@ public class SortSearch{
       return 1 since the value 3 is in index 1 and that is the smallest.
       
     */
+  //smallIndex = the LOCATION of the values
     public int findSmallestIndex(int start){
 	int smallIndex = start;
-	for (int i = start; i< data.length; i++){
-    
+	for (int i = start; i< data.size(); i++){
+    if (data.get(i) < data.get(smallIndex)){
+      smallIndex = i;
+    }
   }
 	return smallIndex;
     }
