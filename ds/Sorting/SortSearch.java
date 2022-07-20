@@ -88,10 +88,22 @@ public class SortSearch{
        0 to the end of the ArrayList.
          For each index, find the smallest from that Location
 	 to the end of the array and swap it with that index.
-	 
+	 Array named data, index is i, traverse the array
        
     */
     public void sort(){
+      int smallIndex = 0;
+      for (int i = 0; i < data.size(); i++){
+        //if (data.get() < data.get(smallIndex)) NOT NEEDED we are using if statement from previous method{
+        // update smallIndex to the result of findSmallIndex(__)
+        smallIndex = findSmallIndex(i);
+        int temp;
+        // SWAP
+        temp = data.get(i);
+        data.set(i,data.get(smallIndex));
+        data.set(smallIndex) = temp;
+        //}
+      }
 
 
     }
