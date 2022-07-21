@@ -7,12 +7,15 @@ Part 1:  (BASIC)
   1. Analyze the two constructors - try to figure out how they work.
   2. Compile and run the program (SortProjectDriver.java and SortProject.java) and confirm
   the behavior of the constructors.
-  Part 2: (BASIC)
+
+Part 2: (BASIC)
   1. Read the description of findSmallestIndex and complete the method.
   2. Uncomment the lines in SortProjectDriver to test.
-  Part 3: (INTERMEDIATE)
+
+Part 3: (INTERMEDIATE)
   1. Complete the sort method - read comments for description
   2. Uncomment the lines in sortProjectDriver to test.
+
 Search Project:
   1. Complete the linear search (BASIC)
   2. Complete the binary search (Intermediate)
@@ -96,12 +99,13 @@ public class SortSearch{
       for (int i = 0; i < data.size(); i++){
         //if (data.get() < data.get(smallIndex)) NOT NEEDED we are using if statement from previous method{
         // update smallIndex to the result of findSmallIndex(__)
-        smallIndex = findSmallIndex(i);
         int temp;
+        smallIndex = findSmallestIndex(i);
+        
         // SWAP
         temp = data.get(i);
         data.set(i,data.get(smallIndex));
-        data.set(smallIndex) = temp;
+        data.set(smallIndex, temp);
         //}
       }
 
@@ -119,25 +123,47 @@ public class SortSearch{
        until either the element is found or you've looked at all the elements.
        This algorithm works on any ArrayList.
     */
+ //       
+ //     // // // // // // 
+
     public int linearSearch(int value){
-	
-	
-	return 0; // replace this return
-    }
-    
+			// int index = -1;
+			for (int i = 0; i < data.size(); i++){
+				if(value == data.get(i)){
+					return i;
+				}
+			}
+        return -1; // replace this return
+		}
+  
     /**
        Implement a binary search as specified by the comments
        
        This algorithm only works on sorted ArrayLists.
     */
     public int binarySearch(int value){
+      int high = data.size()-1;
+      int mid;
+      int low = 0;
 
 	// create assign variables  representing the high, low and middle indices 
 	// while we're not done:
 	//   if the item is at data.get(middle), return middle
 	//   otherwise, update high, low, and middle
+      
+      while (high >= low){
+        mid = (low + high) / 2;
+        if (value < data.get(mid)){
+          high = mid - 1;
+        } 
+        else if (value > data.get(mid)){
+          low = mid + 1;
+        }
+        else
+      return mid;
+      }
 
-	return 0;
+	return -1;
 	    
     }
     

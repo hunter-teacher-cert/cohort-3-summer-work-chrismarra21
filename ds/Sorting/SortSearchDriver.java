@@ -26,7 +26,16 @@ public class SortSearchDriver {
 	ss.sort();
 	System.out.println(ss);
 	
-
+  // Linear Search
+  System.out.println(ss);
+  System.out.println("Testing linear Search: ");
+  System.out.println(ss);
+  System.out.println(ss.linearSearch(15));
+  //Binary Search
+  System.out.println(ss);
+  System.out.println("Testing Binary Search: ");
+  System.out.println(ss);
+  System.out.println(ss.binarySearch(15));   
 
 	      
 
