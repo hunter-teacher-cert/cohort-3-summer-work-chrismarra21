@@ -4,7 +4,7 @@ import java.util.*;
 public class SortSearchDriver {
     public static void main(String[] args) {
 
-
+/*
 	// Uncomment these to test part 1
 	
 	SortSearch ss = new SortSearch(25);
@@ -38,6 +38,34 @@ public class SortSearchDriver {
   System.out.println(ss.binarySearch(15));   
 
 	      
+*/
+  int size = 100;
 
+  SortSearch ss = new SortSearch(size);
+	
+// 	// printing is really slow so we don't want
+// 	// to print when testing time.
+// 	// System.out.println(ss);
+		
+long start,elapsed;
+
+start = System.currentTimeMillis();
+ss.sort();
+
+System.out.println(ss);
+elapsed = System.currentTimeMillis() - start;
+System.out.println("Size: " + size + " Time: " + elapsed);
     }
 }
+
+// /*
+//public class SortSearchReferenceDriver {
+//public static void main(String[] args) {
+
+			   
+
+	      
+
+//     }
+// }
+// */
